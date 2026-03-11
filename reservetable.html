@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reserve Your Table</title>
+  </head>
+  <body>
+    <header>
+      <h1>Reserve Your Table</h1>
+      <p>
+        &quot;Fill the form below to reserve a table in our restaurant&quot;
+      </p>
+    </header>
+    <nav>
+      <a href="index.html" title="go to main page">Home Page</a>
+    </nav>
+    <br /><br />
+    <section>
+      <article>
+        <form action="reservetable.html" method="post" novalidate>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter Full Name"
+            required
+          />
+          <br /><br />
+          <label for="Email">Email Address</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Enter Email"
+            required
+          />
+          <br /><br />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter strong password"
+            minlength="10"
+            maxlength="15"
+            required
+          />
+          <br /><br />
+          <label for="Age">Age</label>
+          <input type="number" id="Age" name="Age" min="18" max="60" required />
+          <br /><br />
+          <label>Gender:</label>
+          <br /><br />
+          <input type="radio" id="male" value="male" name="gender" />
+          <label for="male">Male</label>
+          <br /><br />
+          <input type="radio" id="female" value="female" name="gender" />
+          <label for="female">Female</label>
+          <br /><br />
+          <label>Chosse your Favourite Dishes:</label>
+          <br /><br />
+          <input
+            type="checkbox"
+            id="GrilledChicken"
+            name="GrilledChicken"
+            value="GrilledChicken"
+          />
+          <label for="GrilledChicken">Grilled Chicken</label>
+          <br /><br />
+          <input
+            type="checkbox"
+            id="Italianpasta"
+            name="Italianpasta"
+            value="Italianpasta"
+          />
+          <label for="Italianpasta">Italian Pasta</label>
+          <br /><br />
+          <input
+            type="checkbox"
+            id="Freshsalad"
+            name="Freshsalad"
+            value="Freshsalad"
+          />
+          <label for="Freshsalad">Fresh Salad</label>
+          <br /><br />
+          <input
+            type="checkbox"
+            id="Seafoadsoup"
+            name="Seafoadsoup"
+            value="Seafoadsoup"
+          />
+          <label for="Seafoadsoup">Seafoad Soup</label>
+          <br /><br />
+          <label for="country">Country</label>
+          <input list="countries" id="country" name="country" />
+          <datalist id="countries">
+            <option value="Egypt">Egypt</option>
+            <option value="KSA">Saudi Arabia</option>
+            <option value="UAE">UAE</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Jorden">Jorden</option>
+          </datalist>
+          <br /><br />
+          <label for="learning">learning Type</label>
+          <select name="learning" id="learning">
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+            <option value="Hybird">Hybird</option>
+          </select>
+          <br /><br />
+          <label for="text">Write Text</label>
+          <br /><br />
+          <textarea
+            id="text"
+            name="text"
+            placeholder="Write text"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+          <br /><br />
+          <label for="file">File Upload</label>
+          <input type="file" id="file" name="file" required />
+          <br /><br />
+          <label for="website">Personal Website</label>
+          <input type="url" id="website" name="website" required />
+          <br /><br />
+          <label for="time">Reserve's Time </label>
+          <input type="time" id="time" name="time" required />
+          <br /><br />
+          <label for="countrycode">Country Code</label>
+          <input
+            type="text"
+            id="countrycode"
+            value="EG"
+            name="countrycode"
+            readonly
+          />
+          <br /><br />
+          <label for="Reservationcode">Reservation Code</label>
+          <input
+            type="text"
+            id="Reservationcode"
+            name="Reservationcode"
+            value="GG-2026"
+            disabled
+          />
+          <br /><br />
+          <input type="submit" value="Reserve Table" />
+          <input type="reset" value="Reset Form" />
+        </form>
+      </article>
+    </section>
+    <aside>
+      <h2>Chef Message</h2>
+      <p>Helthy food is not a diet,it is lifestyle</p>
+    </aside>
+    <footer>&copy; Green Garden Restaurant 2026</footer>
+  </body>
+</html>
